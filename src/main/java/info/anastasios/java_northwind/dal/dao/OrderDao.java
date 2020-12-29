@@ -1,13 +1,13 @@
 package info.anastasios.java_northwind.dal.dao;
 
-import info.anastasios.java_northwind.bo.Customer;
+import info.anastasios.java_northwind.bo.Order;
 import info.anastasios.java_northwind.tools.DAOException;
 
 import java.sql.SQLException;
 import java.util.List;
 
-public interface CustomerDao {
+public interface OrderDao {
 
-    List<Customer> selectAllCustomers() throws SQLException, DAOException;
+    List<Order> selectAllOrders() throws SQLException, DAOException;
 
 }
