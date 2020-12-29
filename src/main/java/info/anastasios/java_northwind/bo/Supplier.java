@@ -1,8 +1,8 @@
 package info.anastasios.java_northwind.bo;
 
-public class Customer {
+public class Supplier {
 
-    private char customerId;
+    private int supplierId;
     private String companyName;
     private String contactName;
     private String contactTitle;
@@ -13,32 +13,11 @@ public class Customer {
     private String country;
     private String phone;
     private String fax;
+    private String homePage;
 
-    public Customer() {}
+    public Supplier() {}
 
-    public Customer(String companyName,
-                    String contactName,
-                    String contactTitle,
-                    String address,
-                    String city,
-                    String region,
-                    String postalCode,
-                    String country,
-                    String phone,
-                    String fax) {
-        this.companyName = companyName;
-        this.contactName = contactName;
-        this.contactTitle = contactTitle;
-        this.address = address;
-        this.city = city;
-        this.region = region;
-        this.postalCode = postalCode;
-        this.country = country;
-        this.phone = phone;
-        this.fax = fax;
-    }
-
-    public Customer(char customerId,
+    public Supplier(
                     String companyName,
                     String contactName,
                     String contactTitle,
@@ -48,8 +27,8 @@ public class Customer {
                     String postalCode,
                     String country,
                     String phone,
-                    String fax) {
-        this.customerId = customerId;
+                    String fax,
+                    String homePage) {
         this.companyName = companyName;
         this.contactName = contactName;
         this.contactTitle = contactTitle;
@@ -60,14 +39,41 @@ public class Customer {
         this.country = country;
         this.phone = phone;
         this.fax = fax;
+        this.homePage = homePage;
     }
 
-    public char getCustomerId() {
-        return customerId;
+    public Supplier(int supplierId,
+                    String companyName,
+                    String contactName,
+                    String contactTitle,
+                    String address,
+                    String city,
+                    String region,
+                    String postalCode,
+                    String country,
+                    String phone,
+                    String fax,
+                    String homePage) {
+        this.supplierId = supplierId;
+        this.companyName = companyName;
+        this.contactName = contactName;
+        this.contactTitle = contactTitle;
+        this.address = address;
+        this.city = city;
+        this.region = region;
+        this.postalCode = postalCode;
+        this.country = country;
+        this.phone = phone;
+        this.fax = fax;
+        this.homePage = homePage;
     }
 
-    public void setCustomerId(char customerId) {
-        this.customerId = customerId;
+    public int getSupplierId() {
+        return supplierId;
+    }
+
+    public void setSupplierId(int supplierId) {
+        this.supplierId = supplierId;
     }
 
     public String getCompanyName() {
@@ -150,10 +156,18 @@ public class Customer {
         this.fax = fax;
     }
 
+    public String getHomePage() {
+        return homePage;
+    }
+
+    public void setHomePage(String homePage) {
+        this.homePage = homePage;
+    }
+
     @Override
     public String toString() {
-        return "Customer{" +
-                "customerId=" + customerId +
+        return "Supplier{" +
+                "supplierId=" + supplierId +
                 ", companyName='" + companyName + '\'' +
                 ", contactName='" + contactName + '\'' +
                 ", contactTitle='" + contactTitle + '\'' +
@@ -164,6 +178,7 @@ public class Customer {
                 ", country='" + country + '\'' +
                 ", phone='" + phone + '\'' +
                 ", fax='" + fax + '\'' +
+                ", homePage='" + homePage + '\'' +
                 '}';
     }
 }
