@@ -10,4 +10,6 @@ public interface SupplierDao {
 
     List<Supplier> selectAllSuppliers() throws SQLException, DAOException;
 
+    Supplier selectSupplierById(int supplierId) throws SQLException, DAOException;
+
 }

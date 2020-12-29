@@ -10,4 +10,5 @@ public interface CategoryDao {
 
     List<Category> selectAllCategories() throws SQLException, DAOException;
 
+    Category selectCategoryById(int categoryId) throws SQLException, DAOException;
 }

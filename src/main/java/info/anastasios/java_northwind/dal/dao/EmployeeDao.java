@@ -10,4 +10,6 @@ public interface EmployeeDao {
 
     List<Employee> selectAllEmployees() throws SQLException, DAOException;
 
+    Employee selectEmployeeById(int employeeId) throws SQLException, DAOException;
+
 }

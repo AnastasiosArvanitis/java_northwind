@@ -10,4 +10,6 @@ public interface ShipperDao {
 
     List<Shipper> selectAllShippers() throws SQLException, DAOException;
 
+    Shipper selectShipperById(int shipperId) throws SQLException, DAOException;
+
 }

@@ -10,4 +10,6 @@ public interface CustomerDao {
 
     List<Customer> selectAllCustomers() throws SQLException, DAOException;
 
+    Customer selectCustomerById(String customerId) throws SQLException, DAOException;
+
 }
