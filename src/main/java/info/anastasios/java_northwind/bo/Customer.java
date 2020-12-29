@@ -2,7 +2,7 @@ package info.anastasios.java_northwind.bo;
 
 public class Customer {
 
-    private char customerId;
+    private String customerId;
     private String companyName;
     private String contactName;
     private String contactTitle;
@@ -38,7 +38,7 @@ public class Customer {
         this.fax = fax;
     }
 
-    public Customer(char customerId,
+    public Customer(String customerId,
                     String companyName,
                     String contactName,
                     String contactTitle,
@@ -62,11 +62,11 @@ public class Customer {
         this.fax = fax;
     }
 
-    public char getCustomerId() {
+    public String getCustomerId() {
         return customerId;
     }
 
-    public void setCustomerId(char customerId) {
+    public void setCustomerId(String customerId) {
         this.customerId = customerId;
     }
 

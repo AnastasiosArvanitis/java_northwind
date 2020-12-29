@@ -1,5 +1,6 @@
 package info.anastasios.java_northwind.bo;
 
+import java.sql.Date;
 import java.time.LocalDate;
 
 public class Employee {
@@ -9,8 +10,8 @@ public class Employee {
     private String firstName;
     private String title;
     private String titleOfCourtesy;
-    private LocalDate birthDate;
-    private LocalDate hireDate;
+    private Date birthDate;
+    private Date hireDate;
     private String address;
     private String city;
     private String region;
@@ -27,8 +28,8 @@ public class Employee {
                     String firstName,
                     String title,
                     String titleOfCourtesy,
-                    LocalDate birthDate,
-                    LocalDate hireDate,
+                    Date birthDate,
+                    Date hireDate,
                     String address,
                     String city,
                     String region,
@@ -58,8 +59,8 @@ public class Employee {
                     String firstName,
                     String title,
                     String titleOfCourtesy,
-                    LocalDate birthDate,
-                    LocalDate hireDate,
+                    Date birthDate,
+                    Date hireDate,
                     String address,
                     String city,
                     String region,
@@ -125,19 +126,19 @@ public class Employee {
         this.titleOfCourtesy = titleOfCourtesy;
     }
 
-    public LocalDate getBirthDate() {
+    public Date getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(LocalDate birthDate) {
+    public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 
-    public LocalDate getHireDate() {
+    public Date getHireDate() {
         return hireDate;
     }
 
-    public void setHireDate(LocalDate hireDate) {
+    public void setHireDate(Date hireDate) {
         this.hireDate = hireDate;
     }
 

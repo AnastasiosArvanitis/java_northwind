@@ -1,15 +1,16 @@
 package info.anastasios.java_northwind.bo;
 
 import java.time.LocalDate;
+import java.util.Date;
 
 public class Order {
 
     private int orderId;
     private Customer customer;
     private Employee employee;
-    private LocalDate orderDate;
-    private LocalDate requiredDate;
-    private LocalDate ShippedDate;
+    private Date orderDate;
+    private Date requiredDate;
+    private Date ShippedDate;
     private Shipper shipper;
     private double freight;
     private String shipName;
@@ -24,9 +25,9 @@ public class Order {
     public Order(
                  Customer customer,
                  Employee employee,
-                 LocalDate orderDate,
-                 LocalDate requiredDate,
-                 LocalDate shippedDate,
+                 Date orderDate,
+                 Date requiredDate,
+                 Date shippedDate,
                  Shipper shipper,
                  double freight,
                  String shipName,
@@ -53,9 +54,9 @@ public class Order {
     public Order(int orderId,
                  Customer customer,
                  Employee employee,
-                 LocalDate orderDate,
-                 LocalDate requiredDate,
-                 LocalDate shippedDate,
+                 Date orderDate,
+                 Date requiredDate,
+                 Date shippedDate,
                  Shipper shipper,
                  double freight,
                  String shipName,
@@ -104,27 +105,27 @@ public class Order {
         this.employee = employee;
     }
 
-    public LocalDate getOrderDate() {
+    public Date getOrderDate() {
         return orderDate;
     }
 
-    public void setOrderDate(LocalDate orderDate) {
+    public void setOrderDate(Date orderDate) {
         this.orderDate = orderDate;
     }
 
-    public LocalDate getRequiredDate() {
+    public Date getRequiredDate() {
         return requiredDate;
     }
 
-    public void setRequiredDate(LocalDate requiredDate) {
+    public void setRequiredDate(Date requiredDate) {
         this.requiredDate = requiredDate;
     }
 
-    public LocalDate getShippedDate() {
+    public Date getShippedDate() {
         return ShippedDate;
     }
 
-    public void setShippedDate(LocalDate shippedDate) {
+    public void setShippedDate(Date shippedDate) {
         ShippedDate = shippedDate;
     }
 
