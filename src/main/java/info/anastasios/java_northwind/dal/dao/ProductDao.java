@@ -10,4 +10,6 @@ public interface ProductDao {
 
     List<Product> selectAllProducts() throws SQLException, DAOException;
 
+    Product selectProductById(int productId) throws SQLException, DAOException;
+
 }

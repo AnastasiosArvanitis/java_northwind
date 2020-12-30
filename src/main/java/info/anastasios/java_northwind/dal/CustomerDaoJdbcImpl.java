@@ -28,7 +28,7 @@ public class CustomerDaoJdbcImpl implements CustomerDao {
             while (resultSet.next()) {
                 customers.add(customerBuilder(resultSet));
             }
-            ConnectionManager.disconnect();
+            //ConnectionManager.disconnect();
         } catch (SQLException e) {
             logger.severe("Error selectAllCustomers... " + e.getMessage() + "\n");
             throw new DAOException(e.getMessage(), e);
@@ -49,8 +49,9 @@ public class CustomerDaoJdbcImpl implements CustomerDao {
             if (resultSet.next()) {
                 customer = customerBuilder(resultSet);
             }
+            //ConnectionManager.disconnect();
         } catch (SQLException e) {
-            logger.severe("Error selectAllCategoryById... " + e.getMessage() + "\n");
+            logger.severe("Error selectCustomerById... " + e.getMessage() + "\n");
             throw new DAOException( e.getMessage(), e);
         }
 

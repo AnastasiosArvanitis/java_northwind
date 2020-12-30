@@ -10,4 +10,6 @@ public interface OrderDao {
 
     List<Order> selectAllOrders() throws SQLException, DAOException;
 
+    Order selectOrderById(int orderId) throws SQLException, DAOException;
+
 }

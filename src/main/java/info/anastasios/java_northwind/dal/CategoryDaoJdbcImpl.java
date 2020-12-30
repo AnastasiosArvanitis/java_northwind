@@ -28,7 +28,7 @@ public class CategoryDaoJdbcImpl implements CategoryDao {
             while (resultSet.next()) {
                 categories.add(categoryBuilder(resultSet));
             }
-            ConnectionManager.disconnect();
+            //ConnectionManager.disconnect();
         } catch (SQLException e) {
             logger.severe("Error selectAllCategories... " + e.getMessage() + "\n");
             throw new DAOException(e.getMessage(), e);
@@ -49,9 +49,9 @@ public class CategoryDaoJdbcImpl implements CategoryDao {
             if (resultSet.next()) {
                 category = categoryBuilder(resultSet);
             }
-            ConnectionManager.disconnect();
+            //ConnectionManager.disconnect();
         } catch (SQLException e) {
-            logger.severe("Error selectAllCategoryById... " + e.getMessage() + "\n");
+            logger.severe("Error selectCategoryById... " + e.getMessage() + "\n");
            throw new DAOException( e.getMessage(), e);
         }
         return category;

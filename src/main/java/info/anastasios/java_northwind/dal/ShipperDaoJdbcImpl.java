@@ -28,7 +28,7 @@ public class ShipperDaoJdbcImpl implements ShipperDao {
             while (resultSet.next()) {
                 shippers.add(shipperBuilder(resultSet));
             }
-            ConnectionManager.disconnect();
+            //ConnectionManager.disconnect();
         } catch (SQLException e) {
             logger.severe("Error selectAllShippers... " + e.getMessage() + "\n");
             throw new DAOException( e.getMessage(), e);
@@ -49,7 +49,7 @@ public class ShipperDaoJdbcImpl implements ShipperDao {
             if (resultSet.next()) {
                 shipper = shipperBuilder(resultSet);
             }
-            ConnectionManager.disconnect();
+            //ConnectionManager.disconnect();
         } catch (SQLException e) {
             logger.severe("Error selectShipperById... " + e.getMessage() + "\n");
             throw new DAOException( e.getMessage(), e);

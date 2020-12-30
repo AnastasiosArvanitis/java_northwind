@@ -28,9 +28,9 @@ public class SupplierDaoJdbcImpl implements SupplierDao {
             while (resultSet.next()) {
                 suppliers.add(supplierBuilder(resultSet));
             }
-            ConnectionManager.disconnect();
+            //ConnectionManager.disconnect();
         } catch (SQLException e) {
-            logger.severe("Error selectSuppliersById... " + e.getMessage() + "\n");
+            logger.severe("Error selectAllSuppliers... " + e.getMessage() + "\n");
             throw new DAOException( e.getMessage(), e);
         }
         return suppliers;
@@ -49,7 +49,7 @@ public class SupplierDaoJdbcImpl implements SupplierDao {
             if (resultSet.next()) {
                 supplier = supplierBuilder(resultSet);
             }
-            ConnectionManager.disconnect();
+            //ConnectionManager.disconnect();
         } catch (SQLException e) {
             logger.severe("Error selectSupplierById... " + e.getMessage() + "\n");
             throw new DAOException( e.getMessage(), e);

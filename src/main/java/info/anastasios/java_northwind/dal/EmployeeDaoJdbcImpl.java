@@ -28,9 +28,9 @@ public class EmployeeDaoJdbcImpl implements EmployeeDao {
             while (resultSet.next()) {
                 employees.add(employeeBuilder(resultSet));
             }
-            ConnectionManager.disconnect();
+            //ConnectionManager.disconnect();
         } catch (SQLException e) {
-            logger.severe("Error selectAllCategoryById... " + e.getMessage() + "\n");
+            logger.severe("Error selectAllEmployees... " + e.getMessage() + "\n");
             throw new DAOException( e.getMessage(), e);
         }
         return employees;
@@ -50,9 +50,9 @@ public class EmployeeDaoJdbcImpl implements EmployeeDao {
             if (resultSet.next()) {
                 employee = employeeBuilder(resultSet);
             }
-            ConnectionManager.disconnect();
+            //ConnectionManager.disconnect();
         } catch (SQLException e) {
-            logger.severe("Error selectAllCategoryById... " + e.getMessage() + "\n");
+            logger.severe("Error selectEmployeeById... " + e.getMessage() + "\n");
             throw new DAOException( e.getMessage(), e);
         }
         return employee;
