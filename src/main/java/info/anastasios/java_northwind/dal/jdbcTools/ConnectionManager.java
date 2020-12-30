@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class ConnectionManager {
 
-    private static final String dbUrl = "jdbc:sqlserver://localhost:1433;databaseName=OurBlog";
+    private static final String dbUrl = "jdbc:sqlserver://localhost:1433;databaseName=NORTHWND";
     private static final String dbDriver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
     private static final String dbUser = "sa";
     private static final String dbPassword = "flox123";
