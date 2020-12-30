@@ -3,4 +3,16 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+
+    <display-name>Blog Management Web Application</display-name>
+
+    <servlet>
+        <servlet-name>TestCustomersOrderDetailsJSONServlet</servlet-name>
+        <servlet-class>info.anastasios.java_northwind.servlets.TestCustomersOrderDetailsJSONServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestCustomersOrderDetailsJSONServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
 </web-app>
