@@ -169,6 +169,21 @@ public class TestDal {
             e.printStackTrace();
         }
 
+        System.out.println();
+        System.out.println("-----------------------------------");
+        System.out.println();
+
+        List<Order_details> orderDetails = new ArrayList<>();
+        try {
+            orderDetails = DaoFactory.getOrderDetailsDao().selectAllOrderDetails();
+        } catch (DAOException e) {
+            e.printStackTrace();
+        }
+
+        for (Order_details od : orderDetails) {
+            System.out.println(od);
+        }
+
 
     }
 
