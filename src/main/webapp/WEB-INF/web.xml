@@ -7,12 +7,39 @@
     <display-name>Blog Management Web Application</display-name>
 
     <servlet>
+        <servlet-name>Welcome</servlet-name>
+        <servlet-class>info.anastasios.java_northwind.servlets.WelcomeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Welcome</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CustomersServlet</servlet-name>
+        <servlet-class>info.anastasios.java_northwind.servlets.CustomersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomersServlet</servlet-name>
+        <url-pattern>/Customers</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProductsServlet</servlet-name>
+        <servlet-class>info.anastasios.java_northwind.servlets.ProductsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductsServlet</servlet-name>
+        <url-pattern>/Products</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>TestCustomersOrderDetailsJSONServlet</servlet-name>
         <servlet-class>info.anastasios.java_northwind.servlets.TestCustomersOrderDetailsJSONServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>TestCustomersOrderDetailsJSONServlet</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/CustomersOrderDetailsJSON</url-pattern>
     </servlet-mapping>
 
 </web-app>
