@@ -1,0 +1,54 @@
+:root {
+    --body-bg-color: #6c757d;
+    --body-txt-color: #dee2e6;
+    --header-bg-color: #212529;
+    --header-txt-color: #f1faee;
+    --footer-bg-color: #343a40;
+    --footer-txt-color: #f1faee;
+    --main-bg-color: #495057;
+    --border-color: #e63946;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+.my-container {
+    width: 80%;
+}
+
+a {
+    font-size: 1.2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
